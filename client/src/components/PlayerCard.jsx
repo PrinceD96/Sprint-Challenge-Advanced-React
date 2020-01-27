@@ -3,7 +3,7 @@ import { Table } from "reactstrap";
 
 const PlayerCard = ({ players }) => {
 	return (
-		<div className='table'>
+		<div className='table_container'>
 			<h3>All Players Ranked by Search</h3>
 			<Table>
 				<thead>
