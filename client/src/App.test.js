@@ -22,7 +22,7 @@ test("localStorage hook works", () => {
 
 test("Dark Mode switching works", () => {
 	const doc = rtl.render(<DarkMode />);
-	const toggle = doc.getByLabelText(/theme/i);
+	const toggle = doc.getByLabelText(/dark/i);
 
 	expect(toggle.classList).toContain("toggle");
 
