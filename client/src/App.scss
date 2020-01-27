@@ -1,3 +1,69 @@
 .App {
+	// border: 2px solid royalblue;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding: 0 0 0 5%;
+	line-height: 1;
+
+	.card {
+		margin: 0 10px 15px 0;
+		width: 130px;
+		max-width: 140px;
+		cursor: pointer;
+		&:hover {
+			background-color: lightgray;
+		}
+		&:nth-child(1) {
+			background-color: #d4af37;
+		}
+		&:nth-child(2) {
+			background-color: #c0c0c0;
+		}
+		&:nth-child(3) {
+			background-color: #cd7f32;
+		}
+	}
+}
+
+.dark {
+	display: flex;
+	justify-content: center;
+	margin: 1% auto;
+
+	span {
+		padding-right: 1%;
+	}
+}
+
+.dark-mode {
+	background: rgb(40, 40, 40);
+	color: whitesmoke;
+}
+
+.dark-mode__toggle {
+	background: papayawhip;
+	border-radius: 50px;
+	border: 1px solid black;
+	height: 20px;
+	position: relative;
+	width: 40px;
+}
+
+.toggle {
+	background: #f68819;
+	border-radius: 50px;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	transition: 0.2s;
+	width: 20px;
+}
+
+.toggled {
+	left: 18px;
+}
+.title {
 	text-align: center;
 }
