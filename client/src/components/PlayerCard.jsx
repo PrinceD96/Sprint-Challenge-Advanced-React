@@ -4,12 +4,12 @@ import { Table } from "reactstrap";
 const PlayerCard = ({ players }) => {
 	return (
 		<>
-			<Table hover>
+			<Table responsive>
 				<thead>
 					<tr>
 						<th>Name</th>
 						<th>Country</th>
-						<th>Search Score</th>
+						<th>Searches</th>
 					</tr>
 				</thead>
 				<tbody>

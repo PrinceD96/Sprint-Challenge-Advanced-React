@@ -6,6 +6,9 @@
 	line-height: 1;
 
 	table {
+		margin: 0 auto;
+		width: 500px;
+		cursor: pointer;
 	}
 
 	.card {
@@ -41,6 +44,14 @@
 .dark-mode {
 	background: rgb(40, 40, 40);
 	color: whitesmoke;
+	table {
+		color: white;
+		&:hover {
+			tr {
+				color: seashell;
+			}
+		}
+	}
 }
 
 .dark-mode__toggle {
