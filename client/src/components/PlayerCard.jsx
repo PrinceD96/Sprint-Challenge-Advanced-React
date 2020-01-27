@@ -3,7 +3,8 @@ import { Table } from "reactstrap";
 
 const PlayerCard = ({ players }) => {
 	return (
-		<>
+		<div className='table'>
+			<h3>All Players Ranked by Search</h3>
 			<Table>
 				<thead>
 					<tr>
@@ -22,41 +23,8 @@ const PlayerCard = ({ players }) => {
 					))}
 				</tbody>
 			</Table>
-		</>
+		</div>
 	);
 };
 
 export default PlayerCard;
-
-{
-	/* <Table hover>
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Name</th>
-			<th>Country</th>
-			<th>Searches</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th scope='row'>1</th>
-			<td>Mark</td>
-			<td>Otto</td>
-			<td>@mdo</td>
-		</tr>
-		<tr>
-			<th scope='row'>2</th>
-			<td>Jacob</td>
-			<td>Thornton</td>
-			<td>@fat</td>
-		</tr>
-		<tr>
-			<th scope='row'>3</th>
-			<td>Larry</td>
-			<td>the Bird</td>
-			<td>@twitter</td>
-		</tr>
-	</tbody>
-</Table>; */
-}

@@ -6,7 +6,12 @@
 	justify-content: space-around;
 	line-height: 1;
 
-	table {
+	h3 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.table {
 		width: 500px;
 		cursor: pointer;
 	}
@@ -29,13 +34,9 @@
 .dark-mode {
 	background: rgb(40, 40, 40);
 	color: whitesmoke;
-	table {
+	.table,
+	.chart {
 		color: white;
-		&:hover {
-			tr {
-				color: seashell;
-			}
-		}
 	}
 }
 

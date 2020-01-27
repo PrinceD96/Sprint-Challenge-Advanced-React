@@ -22,8 +22,8 @@ class App extends React.Component {
 				<DarkMode />
 				<h1 className='title'>World Cup Players</h1>
 				<div className='App'>
-					<PlayerCard players={this.state.players} />
 					<Chart players={this.state.players.slice(0, 5)} />
+					<PlayerCard players={this.state.players} />
 				</div>
 			</>
 		);
