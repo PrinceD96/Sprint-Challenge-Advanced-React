@@ -33,9 +33,9 @@ test("Dark Mode switching works", () => {
 	expect(toggle).toBeInTheDocument();
 });
 
-test("Chart renders data correctly", () => {
+test("PlayerCard renders data correctly", () => {
 	const doc = rtl.render(
-		<Chart
+		<PlayerCard
 			data={[
 				{ name: "Alex Morgan", country: "United States", searches: 100 },
 				{ name: "Wendie Renard", country: "France", searches: 7 }
