@@ -4,7 +4,7 @@ import { Table } from "reactstrap";
 const PlayerCard = ({ players }) => {
 	return (
 		<>
-			<Table responsive>
+			<Table>
 				<thead>
 					<tr>
 						<th>Name</th>

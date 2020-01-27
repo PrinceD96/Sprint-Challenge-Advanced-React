@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import PlayerCard from "./components/PlayerCard";
 import DarkMode from "./components/DarkMode";
+import Chart from "./components/Chart";
 
 class App extends React.Component {
 	state = {
@@ -22,6 +23,7 @@ class App extends React.Component {
 				<h1 className='title'>World Cup Players</h1>
 				<div className='App'>
 					<PlayerCard players={this.state.players} />
+					<Chart players={this.state.players.slice(0, 5)} />
 				</div>
 			</>
 		);
