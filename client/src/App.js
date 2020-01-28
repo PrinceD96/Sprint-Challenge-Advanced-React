@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import PlayerCard from "./components/PlayerCard";
+import DarkMode from "./components/DarkMode";
+import Chart from "./components/Chart";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+	state = {
+		players: []
+	};
+
+	componentDidMount() {
+		fetch("http://localhost:5000/api/players")
+			.then(response => response.json())
+			.then(data => this.setState({ players: data }))
+			.catch(error => console.log("Error in componentDidMount", error));
+	}
+
+	render() {
+		return (
+			<>
+				<DarkMode />
+				<h1 className='title'>World Cup Players</h1>
+				<div className='App'>
+					<Chart players={this.state.players.slice(0, 5)} />
+					<PlayerCard players={this.state.players} />
+				</div>
+			</>
+		);
+	}
 }
 
 export default App;
